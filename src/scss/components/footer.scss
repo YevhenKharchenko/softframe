@@ -1,5 +1,6 @@
 .footer {
-  background: #1a2b3c;
+  background: #050501;
+  border-top: 1px solid #a5a5a5;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -35,17 +36,16 @@
 }
 
 .footer-link {
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.36;
   text-align: center;
-  color: #fff;
+  color: #f7e1ae;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   &:hover,
@@ -54,15 +54,13 @@
 }
 
 .footer-text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: 1.28;
   text-align: center;
-  color: #fff;
+  color: #c7c7c7;
 
   @include media(desktop) {
-    font-size: 18px;
   }
 }
