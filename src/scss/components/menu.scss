@@ -1,0 +1,77 @@
+.context-menu {
+  background-image: url(../img/context/context-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: none;
+  z-index: 5;
+}
+
+.context-container {
+  padding: 0 24px;
+}
+
+.context-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 76px;
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+
+.context-list-link {
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 7px 11px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #47505c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+
+  &:active {
+    border-color: #f08080;
+    color: #f08080;
+  }
+}
+
+.is-open {
+  display: flex;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
