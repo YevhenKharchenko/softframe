@@ -1,0 +1,2 @@
+import"./assets/header-78526d91.js";import{S as e}from"./assets/vendor-0d74985d.js";new e(".gallery-swiper-container",{direction:"horizontal",loop:!1,centeredSlides:!0,grabCursor:!0,slidesPerView:1,initialSlide:0,spaceBetween:24,grabCursor:!0,allowTouchMove:!0,speed:500,breakpoints:{1440:{slidesPerView:3,centeredSlides:!1,grabCursor:!1,allowTouchMove:!1,spaceBetween:0}},on:{init:()=>{document.querySelector(".gallery-swiper-container").classList.add("show")}}});
+//# sourceMappingURL=commonHelpers3.js.map
