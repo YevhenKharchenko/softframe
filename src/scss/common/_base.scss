@@ -57,10 +57,19 @@ html {
   }
 }
 
-.section {
-  scroll-margin-top: 52px;
+.line-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    scroll-margin-top: 62px;
+  }
+}
+
+.section {
+  scroll-margin-top: 58px;
+
+  @include media(desktop) {
+    scroll-margin-top: 64px;
   }
 }

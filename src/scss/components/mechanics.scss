@@ -9,16 +9,11 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 375px;
-  background-image: url(../img/mechanics/mechanics-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
     padding-top: 72px;
     padding-bottom: 72px;
     max-width: 1440px;
-    background-image: url(../img/mechanics/mechanics-bg-desk.png);
   }
 }
 
@@ -33,18 +28,17 @@
 }
 
 .mechanics-subtitle {
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.36;
   text-align: center;
-  color: #47505c;
+  color: #c7c7c7;
   margin-bottom: 32px;
 
   @include media(desktop) {
-    font-size: 20px;
-    max-width: 572px;
+    font-size: 18px;
+    max-width: 492px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
@@ -58,44 +52,47 @@
 
 .mechanics-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  gap: 24px;
 
   @include media(desktop) {
-    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
-    align-items: start;
-    gap: 48px;
+    align-items: stretch;
+    gap: 32px;
   }
 }
 
 .mechanics-list-item {
+  backdrop-filter: blur(16px);
+  background: rgba(0, 1, 5, 0.45);
+  border: 1px solid #525252;
+  border-radius: 16px;
+  padding: 39px 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
   width: 100%;
-  max-width: 160px;
 
   @include media(desktop) {
-    max-width: 220px;
+    padding: 55px 23px;
+    max-width: 248px;
   }
 }
 
 .mechanics-icon {
   @include media(desktop) {
-    font-size: 20px;
   }
 }
 
 .mechanics-item-text {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: 1.36;
   text-align: center;
-  color: #47505c;
+  color: #c7c7c7;
 
   @include media(desktop) {
     font-size: 18px;

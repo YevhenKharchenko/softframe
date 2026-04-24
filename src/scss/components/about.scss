@@ -1,18 +1,33 @@
+.about-mechanics-bg-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/about/about-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/about/about-bg-desk.jpg);
+  }
+}
+
 .about-section {
   @include media(desktop) {
   }
 }
 
 .about-bg-wrapper {
-  padding-top: 415px;
+  padding-top: 64px;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   max-width: 375px;
 
   @include media(desktop) {
-    padding-top: 159px;
-    padding-bottom: 145px;
+    padding-top: 104px;
+    padding-bottom: 72px;
     max-width: 1440px;
   }
 }
@@ -24,49 +39,26 @@
 
 .about-content-wrapper {
   @include media(desktop) {
-    max-width: 528px;
-    margin-left: auto;
   }
 }
 
 .about-title {
-  text-align: left;
-  margin-bottom: 24px;
-
   @include media(desktop) {
-  }
-}
-
-.about-subtitle {
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #1a2b3c;
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-    font-size: 20px;
   }
 }
 
 .about-text {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #47505c;
+  line-height: 1.36;
+  text-align: center;
+  color: #c7c7c7;
 
   @include media(desktop) {
     font-size: 18px;
-  }
-}
-
-.about-top-text {
-  margin-bottom: 8px;
-
-  @include media(desktop) {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -1,3 +1,18 @@
+.features-gameplay-bg-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/features/features-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/features/features-bg-desk.jpg);
+  }
+}
+
 .features-section {
   @include media(desktop) {
   }
@@ -5,20 +20,15 @@
 
 .features-bg-wrapper {
   padding-top: 40px;
-  padding-bottom: 353px;
+  padding-bottom: 40px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/features/features-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
 
   @include media(desktop) {
     padding-top: 72px;
     padding-bottom: 72px;
     max-width: 1440px;
-    background-image: url(../img/features/features-bg-desk.png);
   }
 }
 
@@ -28,6 +38,18 @@
 }
 
 .features-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.features-text-wrapper {
   @include media(desktop) {
     max-width: 528px;
   }
@@ -35,16 +57,28 @@
 
 .features-title {
   text-align: left;
-  margin-bottom: 24px;
 
   @include media(desktop) {
   }
 }
 
+.features-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.36;
+  color: #c7c7c7;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
 .features-list {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 
   @include media(desktop) {
   }
@@ -53,9 +87,11 @@
 .features-list-item {
   display: flex;
   align-items: start;
-  gap: 8px;
+  gap: 16px;
+  max-width: 163px;
 
   @include media(desktop) {
+    max-width: 256px;
   }
 }
 
@@ -67,20 +103,21 @@
 }
 
 .features-item-text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #1a2b3c;
+  line-height: 1.28;
+  color: #c7c7c7;
 
   @include media(desktop) {
-    font-size: 18px;
   }
 }
 
-.features-text-span {
-  font-weight: 600;
+.features-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 
   @include media(desktop) {
   }
